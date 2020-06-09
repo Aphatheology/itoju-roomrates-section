@@ -59,7 +59,6 @@ img{
 }
 
 .room-info{
-    text-align: center;
     display: grid;
    grid-template-areas: 
             'h4 h4 star star'
@@ -71,7 +70,8 @@ img{
 h4{
     grid-area: h4;
     margin: 0;
-    color: #ffffff;   
+    color: #ffffff; 
+    margin-left: 3rem;  
 }
 
 .star{
@@ -175,12 +175,27 @@ i[class*=fa-check-circle]::before{
                 'room5' 
                 'room6';
     }
-    
+}
+
+@media(width: 768px){
+    h4{
+        margin-left: 8rem;
+    }
+    .freebies{
+        padding-left: 4rem;
+    }
+    .fa-ul{
+        margin-left: 5.5rem;
+    }
+    button{
+        margin-left: 8rem;
+    }
 }
 
 @media(max-width: 320px){
     h4{
-        font-size: 11.5px;
+        margin-left: 10px;
+        font-size: 11px;
     }
     button{
         margin-left: 0.2rem;
